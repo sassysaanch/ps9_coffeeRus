@@ -76,5 +76,55 @@ str_view_all(string_with_backslashes, pattern = "\\\\", html = FALSE)
 
 
 ## -----------------------------------------------------------------------------
+## Part 4 - Label each question using comments
+## -----------------------------------------------------------------------------
+
+# Question 1
+
+text <- c("In 5... 4... 3... 2...",
+          "It can cost anywhere between $50 to $100 (... or even $1k!)",
+          "These are parenthesis (), while these are brackets []... I think.")
+
+# Question 2
+
+str_view(text, pattern = "^I")
+
+# Question 3
+
+str_view(text, pattern = "\\.$")
+
+# Question 4
+
+str_view_all(text, pattern = "\\d+")
+
+# Question 5 (need to do)
+
+5. Show all matches to all dollar amounts, including the dollar sign and `k` if there is one (i.e., `$50`, `$100`, `$1k`)
+
+str_view_all(text, pattern = "[$]\\d+|[$\\d+]k")
+
+# Question 6
+
+str_view_all(text, pattern = "\\...")
+
+# Question 7 (need to do)
+
+7. Show all matches to parentheses, including the contents between the parentheses if there are any.
+
+str_view_all(text, pattern = "\\(\\)")
+
+# Question 8
+
+str_view_all(text, pattern = "[a-zA-Z]\\w+|I")
+
+# Question 9
+
+str_view_all(text, pattern = "[a-zA-Z]\\w{4,}|\\...")
+
+# Question 10
+
+str_view_all(text, pattern = "([a-zA-Z0-9])\\1")
+
+## -----------------------------------------------------------------------------
 ## END SCRIPT
 ## -----------------------------------------------------------------------------
