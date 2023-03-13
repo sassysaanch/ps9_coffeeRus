@@ -97,11 +97,9 @@ str_view(text, pattern = "\\.$")
 
 str_view_all(text, pattern = "\\d+")
 
-# Question 5 (need to do)
+# Question 5
 
-5. Show all matches to all dollar amounts, including the dollar sign and `k` if there is one (i.e., `$50`, `$100`, `$1k`)
-
-str_view_all(text, pattern = "[$]\\d+|[$\\d+]k")
+str_view_all(text, pattern = "[$]\\d{2,}|[$]\\d+k")
 
 # Question 6
 
@@ -109,9 +107,7 @@ str_view_all(text, pattern = "\\...")
 
 # Question 7 (need to do)
 
-7. Show all matches to parentheses, including the contents between the parentheses if there are any.
-
-str_view_all(text, pattern = "\\(\\)")
+str_view_all(text, pattern = "([?\\(]).*([?\\)])")
 
 # Question 8
 

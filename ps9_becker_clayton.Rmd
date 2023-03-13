@@ -156,8 +156,8 @@ In this section and the next, you will practice writing regular expressions to m
   - Share something you learned from this problem set or the course. Please mention your team (e.g., @anyone-can-cook/your_team_name).
 - You are also required to respond to at least one issue posted by another student.
 
-- Paste the url to your issue here: 
-- Paste the url to the issue you responded to here: 
+- Paste the url to your issue here: https://github.com/anyone-can-cook/rclass2_student_issues_w23/issues/385
+- Paste the url to the issue you responded to here: https://github.com/anyone-can-cook/rclass2_student_issues_w23/issues/383
 
 
 # Knit to pdf and submit problem set  
