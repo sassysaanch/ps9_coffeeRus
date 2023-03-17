@@ -295,16 +295,26 @@ BiocManager::install("ggbio")
 
 
 ```{r}
+
+
 library(ggbio)
 library(Homo.sapiens)
 
+<<<<<<< HEAD
 png(file.path('/Users/saanchishah/Desktop/rclass2/ps9_coffeeRus', 'extra_credit_SS.png'))
+=======
+png(file.path("/Users/saanchishah/Desktop/rclass2/ps9_coffeeRus", 'extracredit_ss.png'))
+>>>>>>> dev_saanchi_shah
 data(genesymbol, package="biovizBase")
 oo <- genesymbol["NF1"]
 ap1 <- autoplot(Homo.sapiens, which=oo, gap.geom = "chevron")
 attr(ap1, "hasAxis") = TRUE
 ap1 + xlab("chr17")
+<<<<<<< HEAD
 dev.off()
+=======
+dev.off
+>>>>>>> dev_saanchi_shah
 ```
 
 
